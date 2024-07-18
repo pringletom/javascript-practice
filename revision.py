@@ -49,6 +49,8 @@ else:
     print(number, "is an odd Number")
 
 #while loop and python list for yes/no questions
+yesResponse = {'you betcha', 'yes', 'Yes', 'yeah', 'y', 'ye', 'Ye', 'Y', 'Yeah', 'Nah yeah'}
+noResponse = {'nah', 'no', 'No', 'N', 'n', 'Nah', 'yeah nah'}
 sports = {"football": "football is famous because of Ronaldo and Messi.",
           "rugby": "rugby is played within 80 minutes with two teams of 15.", 
           "padel": "padel is the fasted growing racket sport.", 
@@ -59,15 +61,14 @@ sports = {"football": "football is famous because of Ronaldo and Messi.",
         }
 while True:
     response = input("would you like to learn about a sport? (yes or no):")
-    if response == "yes":
+    if response in yesResponse:
         for index, value in enumerate(sports, start=1):
             print(f"{index}: {value}")
         sport_choice = input("which sport would you like to learn about?")
-    elif response == "no":
+    elif response in noResponse:
             print("okily dokily!")
             break 
-
     if sport_choice in sports:
         print(sports[sport_choice])
     else:
-        print("sorry I don't know whether that sport exists.")
+        print("sorry I don't know whether that sport exists. I can tell you about the others.")
