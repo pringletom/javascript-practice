@@ -21,7 +21,9 @@ console.log(c("+", 5, 5));
 
 // Task 4
 // Return a random number between 1 and 100 every time the function is called
+// Module is math - random
 // Bonus challenge: Rounded to 2 decimals
+// bonus 2 round up or down numbers
 
 // Task 5
 // What are the datatypes called in Javascript - list in comments next to Python equivalent
